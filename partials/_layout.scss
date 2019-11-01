@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(38, 38, 119);
+    font-family: sans-serif;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.jc-between{
+    justify-content: space-between;
+}
+
+.m-auto{
+    margin: auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.card{
+    background-color: transparent;
+    margin-top: 10em;
+    &-header{
+        background-color: white;
+    }
+    &-content{
+        background-color: white;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
+
+
+
