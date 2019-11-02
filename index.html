@@ -12,10 +12,11 @@
 
     <body>
 
-        <div class=" [ nav d-flex ] ">
+        <div class=" [ nav d-flex ] " id="navbar">
             <div class=" [ col-md-3 nav-logo ] ">
                 <img class=" [  ] " src="#">
             </div>
+        <div class=" [ col-md-5 ] "></div>
             <ul class=" [ col-md-3 nav-ul d-flex jc-between ] ">
                 <li class=" [ nav-ul-li ] ">
                     <a href="#" class=" [ nav-ul-li-a ] "> SELG</a>
@@ -30,10 +31,10 @@
         </div>
         <!--/nav-->
 
-        <div class=" [ wrapper ] ">
 
-            <div class=" [ col-md-10 secondNav m-auto ] ">
-                <ul class=" [ secondNav-ul d-flex jc-between ] ">
+
+            <div class=" [ secondNav m-auto ] " id="navbar2">
+                <ul class=" [  secondNav-ul d-flex jc-around ] ">
                     <li class=" [ nav-ul-li ] ">
                         <a href="#typography" class=" [ secondNav-ul-li-a ] "> Typografi</a>
                     </li>
@@ -54,7 +55,7 @@
             <!--/secondNav-->
 
             <div class=" [ container ] ">
-                <h1 class=" [ m-auto text-center ] "> Design System for HomeFair </h1>
+                <h1 class=" [ m-auto text-center ] " style="color: white;"> Design System for HomeFair </h1>
 
                 <div class=" [ card ] " id="typography">
                     <h2 class=" [ card-header text-center ] ">Typografi</h2>
@@ -106,7 +107,7 @@ p{
                     <div class=" [ d-flex jc-between ] ">
                         <div class=" [ col-md-3 card-content ] ">
                             <h3 class="title">Resultat</h3>
-                            <img src="images/fargekart.png" class="col-md-10" alt="Fargekart for HomeFair">
+                            <img src="images/fargekart.png" class="col-md-12" alt="Fargekart for HomeFair">
                         </div>
                         <div class=" [ col-md-5 card-content ] ">
                             <section>
@@ -141,20 +142,63 @@ p{
                     </div>
                 </div>
                 <div class=" [ card ] " id="buttons">
-                    <h2 class=" [ card-header text-center ] ">Knapper</h2>
+                    <h2 class=" [ card-header text-center ] ">Knapper & Linker</h2>
                     <div class=" [ d-flex jc-between ] ">
                         <div class=" [ col-md-3 card-content ] ">
-                            <h1>h1</h1>
-                            <h2>h2</h2>
-                            <h3>h3</h3>
-                            <p>paragraph</p>
+                                <h3 class="title">Resultat</h3>
+                            <a href="#" class=" [ col-md-4 btn ] ">Hovedknapp</a> <br>
+                            <a href="#" class=" [ col-md-4 btn ] " style="background-color: #014d06;">On hover</a>  <br>
+                            <a href="#" class=" [ col-md-4 btn-blue ] ">Sekundærknapp</a> <br>
+                            <a href="#" class=" [ col-md-4 btn-blue ] " style="background-color: #2d8bc2;">On hover</a>
                         </div>
                         <div class=" [ col-md-5 card-content ] ">
-                            wow
+                        <section>
+                                <h3 class="title">Koden</h3>
+
+                                <pre><code class="language-css">
+
+.btn {
+    background-color:#006607;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:17px;
+    padding:10px 40px;
+    text-align: center;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #006607;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    &:hover {
+        background-color:#014d06;
+    }
+}
+
+.btn-blue{
+    background-color:#3cb2f5;
+    display:inline-block;
+    cursor:pointer;
+    color:#000000;
+    font-family:Arial;
+    font-size:17px;
+    padding:10px 40px;
+    text-align: center;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #006607;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    &:hover{
+        background-color:#2d8bc2;
+    }
+}
+
+</code>
+                </pre>
+                            </section>
                         </div>
                         <div class=" [ col-md-3 card-content ] ">
-                            hey
-                        </div>
+                                <h3 class="title">Designvalg</h3>                        </div>
 
                     </div>
                 </div>
@@ -179,11 +223,11 @@ p{
             </div>
             <!--/container-->
 
-        </div>
-        <!--/wrapper-->
+
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
         <script src="prism.js"></script>
+        <script src="stickyNavbar.js"></script>
 
         <script>
             (function() {

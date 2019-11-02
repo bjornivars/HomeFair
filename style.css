@@ -1,6 +1,8 @@
 body {
-  background-color: #262677;
+  background-color: #006607;
   font-family: sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .d-flex {
@@ -9,6 +11,10 @@ body {
 
 .jc-between {
   justify-content: space-between;
+}
+
+.jc-around {
+  justify-content: space-around;
 }
 
 .m-auto {
@@ -187,6 +193,70 @@ body {
     width: 100%;
   }
 }
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav {
+  background-color: white;
+}
+.nav-ul-li-a {
+  color: black;
+}
+
+.secondNav {
+  background-color: #3cb2f5;
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.secondNav-ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+.secondNav-ul-li-a {
+  color: black;
+}
+
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+#navbar {
+  overflow: hidden;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky2 {
+  width: 80%;
+  top: 3.1em;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 h1 {
   font-family: "Open Sans", sans-serif;
   font-size: 4em;
@@ -225,6 +295,42 @@ p {
 .black {
   background-color: #000000;
   color: #FFFFFF;
+}
+
+.btn {
+  background-color: #006607;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 10px 40px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #006607;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.btn:hover {
+  background-color: #014d06;
+}
+
+.btn-blue {
+  background-color: #3cb2f5;
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 10px 40px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #006607;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.btn-blue:hover {
+  background-color: #2d8bc2;
 }
 
 /*# sourceMappingURL=style.css.map */
