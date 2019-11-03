@@ -1,8 +1,9 @@
 body {
-  background-color: #006607;
+  background-color: #082918;
   font-family: sans-serif;
   margin: 0;
   padding: 0;
+  margin-bottom: 15em;
 }
 
 .d-flex {
@@ -14,7 +15,7 @@ body {
 }
 
 .jc-around {
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .m-auto {
@@ -41,6 +42,7 @@ body {
   background-color: white;
   padding-left: 1em;
   padding-right: 1em;
+  padding-bottom: 1em;
 }
 
 @media only screen and (max-width: 599px) {
@@ -213,6 +215,7 @@ a {
   width: 100%;
   padding-top: 1em;
   padding-bottom: 1em;
+  border-bottom: 1px solid #3083b3;
 }
 .secondNav-ul {
   margin: 0;
@@ -264,7 +267,7 @@ h1 {
 
 h2 {
   font-family: "Open Sans", sans-serif;
-  font-size: 3em;
+  font-size: 2.75em;
 }
 
 h3 {
@@ -298,7 +301,7 @@ p {
 }
 
 .btn {
-  background-color: #006607;
+  background-color: #014d06;
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
@@ -312,7 +315,7 @@ p {
   margin-bottom: 1em;
 }
 .btn:hover {
-  background-color: #014d06;
+  background-color: #082918;
 }
 
 .btn-blue {
@@ -331,6 +334,32 @@ p {
 }
 .btn-blue:hover {
   background-color: #2d8bc2;
+}
+
+.ds-square-background-color {
+  background-color: #896;
+  height: 100px;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.house {
+  background: url("images/texture01_v2.png");
+}
+
+.form {
+  width: 100%;
+}
+
+.form-input {
+  width: 100%;
+  height: 2em;
+  border: 1px solid black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  padding-left: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

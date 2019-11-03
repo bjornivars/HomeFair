@@ -39,23 +39,26 @@
                         <a href="#typography" class=" [ secondNav-ul-li-a ] "> Typografi</a>
                     </li>
                     <li class=" [ nav-ul-li ] ">
-                        <a href="#colors" class=" [ secondNav-ul-li-a ] "> Fargekart</a>
+                        <a href="#colors" class=" [ secondNav-ul-li-a ] "> |kart</a>
                     </li>
                     <li class=" [ nav-ul-li ] ">
-                        <a href="#buttons" class=" [ secondNav-ul-li-a ] "> Knapper</a>
+                        <a href="#buttons" class=" [ secondNav-ul-li-a ] "> Knapper & Linker</a>
                     </li>
                     <li class=" [ nav-ul-li ] ">
-                        <a href="#" class=" [ secondNav-ul-li-a ] "> Random</a>
+                        <a href="#textures" class=" [ secondNav-ul-li-a ] "> Teksturer</a>
                     </li>
                     <li class=" [ nav-ul-li ] ">
-                        <a href="#" class=" [ secondNav-ul-li-a ] "> Random</a>
+                        <a href="#icons" class=" [ secondNav-ul-li-a ] "> Ikoner </a>
                     </li>
+                    <li class=" [ nav-ul-li ] ">
+                            <a href="#form" class=" [ secondNav-ul-li-a ] "> Tekstfelt </a>
+                        </li>
                 </ul>
             </div>
             <!--/secondNav-->
 
             <div class=" [ container ] ">
-                <h1 class=" [ m-auto text-center ] " style="color: white;"> Design System for HomeFair </h1>
+                <h1 class=" [ m-auto text-center ] " style="color: white; margin-top: 2em;"> Design System for HomeFair </h1>
 
                 <div class=" [ card ] " id="typography">
                     <h2 class=" [ card-header text-center ] ">Typografi</h2>
@@ -78,8 +81,8 @@ h1{
 }
 
 h2{
-
-    font-size: 3em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.75em;
 }
 
 h3{
@@ -97,7 +100,15 @@ p{
                         </div>
                         <div class=" [ col-md-3 card-content ] ">
                             <h3 class="title">Designvalg</h3>
-                            <p>Open Sans er brukt til overskrifter på grunn av den </p>
+                            <p>Open Sans er brukt til overskrifter på grunn av den enkle lesbarheten i tilleg til 
+                                at den oppleves som proffesjonell og seriøs.
+                            </p>
+                            <br>
+                            <p>Roboto Condensed er brukt til mengdetekst mest på grunn av lesbarhet. 
+                                Det er en font som veldig mange ønsker å bruke akkurat på grunn av dette.
+                                Med de forskjellige vekt-valgene finner man alltid en tyngde som passer til
+                                både overskrift og brødtekst.
+                                </p>
                         </div>
 
                     </div>
@@ -107,7 +118,7 @@ p{
                     <div class=" [ d-flex jc-between ] ">
                         <div class=" [ col-md-3 card-content ] ">
                             <h3 class="title">Resultat</h3>
-                            <img src="images/fargekart.png" class="col-md-12" alt="Fargekart for HomeFair">
+                            <img src="images/fargekart02.png" class="col-md-12" alt="Fargekart for HomeFair">
                         </div>
                         <div class=" [ col-md-5 card-content ] ">
                             <section>
@@ -137,6 +148,7 @@ p{
                         </div>
                         <div class=" [ col-md-3 card-content ] ">
                             <h3 class="title">Designvalg</h3>
+                            <p>Fargene er ikke 100% satt enda...</p>
                         </div>
 
                     </div>
@@ -147,7 +159,7 @@ p{
                         <div class=" [ col-md-3 card-content ] ">
                                 <h3 class="title">Resultat</h3>
                             <a href="#" class=" [ col-md-4 btn ] ">Hovedknapp</a> <br>
-                            <a href="#" class=" [ col-md-4 btn ] " style="background-color: #014d06;">On hover</a>  <br>
+                            <a href="#" class=" [ col-md-4 btn ] " style="background-color: #082918;">On hover</a>  <br>
                             <a href="#" class=" [ col-md-4 btn-blue ] ">Sekundærknapp</a> <br>
                             <a href="#" class=" [ col-md-4 btn-blue ] " style="background-color: #2d8bc2;">On hover</a>
                         </div>
@@ -155,8 +167,7 @@ p{
                         <section>
                                 <h3 class="title">Koden</h3>
 
-                                <pre><code class="language-css">
-
+ <pre><code class="language-css">
 .btn {
     background-color:#006607;
     display:inline-block;
@@ -198,7 +209,13 @@ p{
                             </section>
                         </div>
                         <div class=" [ col-md-3 card-content ] ">
-                                <h3 class="title">Designvalg</h3>                        </div>
+                                <h3 class="title">Designvalg</h3> 
+                                <p>Knappene har skarpe farger og kanter. Dette er for 
+                                        å illustrere serriøsitet, proffesjonalitet, og trygghet.
+                                        HomeFair skal ikke være rund i kantene, og ingenting på nettsiden
+                                        skal tilsi noe annet.
+                                    </p>
+                            </div>
 
                     </div>
                 </div>
@@ -206,20 +223,90 @@ p{
                     <h2 class=" [ card-header text-center ] ">Teksturer</h2>
                     <div class=" [ d-flex jc-between ] ">
                         <div class=" [ col-md-3 card-content ] ">
-                            <h1>h1</h1>
-                            <h2>h2</h2>
-                            <h3>h3</h3>
-                            <p>paragraph</p>
+                                <h3 class="title">Resultat</h3>   
+                                <figure class="ds-square-background-color house" role="img" aria-labelledby="green-square">   
+                                    </figure>
                         </div>
                         <div class=" [ col-md-5 card-content ] ">
-                            wow
-                        </div>
+                                <h3 class="title">Koden</h3>                         </div>
                         <div class=" [ col-md-3 card-content ] ">
-                            hey
+                                <h3 class="title">Designvalg</h3> 
+                                <p>Teksturen HomeFair kan ta i bruk er en tekstur basert på 
+                                    hus.
+                                </p>
                         </div>
 
                     </div>
                 </div>
+
+
+                <div class=" [ card ] " id="icons">
+                        <h2 class=" [ card-header text-center ] ">Ikoner</h2>
+                        <div class=" [ d-flex jc-between ] ">
+                            <div class=" [ col-md-3 card-content ] ">
+                                    <h3 class="title">Resultat</h3>   
+
+                            </div>
+                            <div class=" [ col-md-5 card-content ] ">
+                                    <h3 class="title">Koden</h3> 
+                            </div>
+                            <div class=" [ col-md-3 card-content ] ">
+                                    <h3 class="title">Designvalg</h3> 
+                            </div>
+    
+                        </div>
+                    </div>
+
+                    <div class=" [ card ] " id="form">
+                            <h2 class=" [ card-header text-center ] ">Tekstfelt</h2>
+                            <div class=" [ d-flex jc-between ] ">
+                                <div class=" [ col-md-3 card-content ] ">
+                                        <h3 class="title">Resultat</h3>   
+                                        <form class=" [ form ] ">
+                                                <input type="text" name="search" aria-label="Search field" class=" [ form-input ] " placeholder="Søk på adresse">
+                                                <br>
+                                                <input type="text" name="name" aria-label="name field" class=" [ form-input ] " placeholder="Navn">
+                                                <br>
+                                                
+                                            </form>
+                                </div>
+                                <div class=" [ col-md-5 card-content ] ">
+
+                                        <section>
+                                                <h3 class="title">Koden</h3> 
+<pre><code class="language-css">
+.form {
+    width: 100%;
+    }
+    .form-input {
+    width: 100%;
+    height: 2em;
+    border: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    padding-left: 5px;
+    }
+                </code>
+                                </pre>
+                                            </section>
+                                </div>
+                                <div class=" [ col-md-3 card-content ] ">
+                                        <h3 class="title">Designvalg</h3> 
+                                        <p>Tekstfeltene på nettsiden skal være i samme stil som 
+                                            knappene når det kommer til dette med kantene. Skarpe kanter
+                                            og rent utseende skal skape tillit til brukeren.
+                                        </p>
+                                </div>
+        
+                            </div>
+                        </div>
+
+
+
+
+
+
             </div>
             <!--/container-->
 

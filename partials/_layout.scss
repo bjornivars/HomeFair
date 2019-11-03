@@ -1,8 +1,10 @@
 body{
-    background-color: #006607;
+    background-color: #082918;
     font-family: sans-serif;
     margin: 0;
     padding: 0;
+    margin-bottom: 15em;
+
 }
 
 .d-flex{
@@ -13,7 +15,7 @@ body{
     justify-content: space-between;
 }
 .jc-around{
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .m-auto{
@@ -39,6 +41,7 @@ body{
         background-color: white;
         padding-left: 1em;
         padding-right: 1em;
+        padding-bottom: 1em;
     }
 }
 
