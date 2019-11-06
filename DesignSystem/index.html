@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HomeFair Design System</title>
+    <link href="prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <body>
+
+        <div class=" [ nav d-flex ] " id="navbar">
+            <div class=" [ col-md-3 nav-logo ] ">
+                <img class=" [ nav-logo ] " src="images/HomeFair_logo (1).png">
+            </div>
+
+            <div class=" [ col-md-5 ] "></div>
+            <!--
+            <ul class=" [ col-md-3 nav-ul d-flex jc-between ] ">
+                <li class=" [ nav-ul-li ] ">
+                    <a href="#" class=" [ nav-ul-li-a ] "> SELG</a>
+                </li>
+                <li class=" [ nav-ul-li ] ">
+                    <a href="#" class=" [ nav-ul-li-a ] "> PRIS </a>
+                </li>
+                <li class=" [ nav-ul-li ] ">
+                    <a href="#" class=" [ nav-ul-li-a ] "> Type</a>
+                </li>
+            </ul>
+-->
+        </div>
+
+        <!--/nav-->
+
+        <div class=" [ secondNav m-auto ] " id="navbar2">
+            <ul class=" [  secondNav-ul d-flex jc-around ] ">
+                <li class=" [ nav-ul-li ] ">
+                    <a href="#typography" class=" [ secondNav-ul-li-a ] "> Typografi</a>
+                </li>
+                <li class=" [ nav-ul-li ] ">
+                    <a href="#colors" class=" [ secondNav-ul-li-a ] "> Fargekart</a>
+                </li>
+                <li class=" [ nav-ul-li ] ">
+                    <a href="#buttons" class=" [ secondNav-ul-li-a ] "> Knapper & Linker</a>
+                </li>
+                <li class=" [ nav-ul-li ] ">
+                    <a href="#textures" class=" [ secondNav-ul-li-a ] "> Teksturer</a>
+                </li>
+                <li class=" [ nav-ul-li ] ">
+                    <a href="#icons" class=" [ secondNav-ul-li-a ] "> Ikoner </a>
+                </li>
+                <li class=" [ nav-ul-li ] ">
+                    <a href="#form" class=" [ secondNav-ul-li-a ] "> Tekstfelt </a>
+                </li>
+            </ul>
+        </div>
+        <!--/secondNav-->
+
+        <div class=" [ container ] ">
+            <h1 class=" [ m-auto text-center ] " style="color: white; margin-top: 2em;"> Design System for HomeFair </h1>
+
+            <div class=" [ card ] " id="typography">
+                <h2 class=" [ card-header text-center ] ">Typografi</h2>
+                <div class=" [ d-flex jc-between ] ">
+                    <div class=" [ col-md-3 card-content ] ">
+                        <h3 class="title">Resultat</h3>
+                        <h1>Header 1 (h1)</h1>
+                        <h2>Header 2 (h2)</h2>
+                        <h3>Header 3 (h3)</h3>
+                        <p>Paragraph (p)</p>
+                    </div>
+                    <div class=" [ col-md-5 card-content ] ">
+                        <section>
+                            <h3 class="title">Koden</h3>
+
+                            <pre><code class="language-css">
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4em;
+}
+
+h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.75em;
+}
+
+h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+}
+
+p{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.2em;
+}
+</code>
+                </pre>
+                        </section>
+                    </div>
+                    <div class=" [ col-md-3 card-content ] ">
+                        <h3 class="title">Designvalg</h3>
+                        <p>Open Sans er brukt til overskrifter på grunn av den enkle lesbarheten i tilleg til at den oppleves som proffesjonell og seriøs.
+                        </p>
+                        <br>
+                        <p>Roboto Condensed er brukt til mengdetekst mest på grunn av lesbarhet. Det er en font som veldig mange ønsker å bruke akkurat på grunn av dette. Med de forskjellige vekt-valgene finner man alltid en tyngde som passer til både overskrift og brødtekst.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class=" [ card ] " id="colors">
+                <h2 class=" [ card-header text-center ] ">Fargekart</h2>
+                <div class=" [ d-flex jc-between ] ">
+                    <div class=" [ col-md-3 card-content ] ">
+                        <h3 class="title">Resultat</h3>
+                        <img src="images/fargekart02.png" class="col-md-12" alt="Fargekart for HomeFair">
+                    </div>
+                    <div class=" [ col-md-5 card-content ] ">
+                        <section>
+                            <h3 class="title">Koden</h3>
+
+                            <pre><code class="language-css">
+.green{
+    background-color: #006607;
+    color: #FFFFFF;
+}
+.blue{
+    background-color:#3CB2F5;
+    color: #000000;
+}
+.white{
+    background-color: #FFFFFF;
+    color: #000000;
+}
+.black{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+</code>
+                </pre>
+                        </section>
+                    </div>
+                    <div class=" [ col-md-3 card-content ] ">
+                        <h3 class="title">Designvalg</h3>
+                        <p>Den mørkegrønne fargen vil være brukt som hovedfargen til HomeFair. Denne skal representere utvikling og stabilitet. Grønn er kjent for å være en beroligende farge, og gjennom dette viser HomeFair at kundene deres kan slippe å bekymre seg for at de kunne fått mer penger for sin bolig.
+                        </p>
+
+                        <p>
+                            Den lyseblå fargen er sekundærfargen på nettsiden, og skal ikke bli brukt veldig mye. Blå blir ofte brukt av store selskaper og assosieres ofte med proffesjonalitet, stabilitet, men også forståelse. Gjennom blå detaljer vil HomeFair vise akkurat dette.
+                        </p>
+
+                        <p>
+                            Svart og hvit er brukt til bakgrunn og tekst for best mulig kontrast ved lesing.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class=" [ card ] " id="buttons">
+                <h2 class=" [ card-header text-center ] ">Knapper & Linker</h2>
+                <div class=" [ d-flex jc-between ] ">
+                    <div class=" [ col-md-3 card-content ] ">
+                        <h3 class="title">Resultat</h3>
+                        <a href="#" class=" [ col-md-4 btn ] ">Hovedknapp</a>
+                        <br>
+                        <a href="#" class=" [ col-md-4 btn ] " style="background-color: #082918;">On hover</a>
+                        <br>
+                        <a href="#" class=" [ col-md-4 btn-blue ] ">Sekundærknapp</a>
+                        <br>
+                        <a href="#" class=" [ col-md-4 btn-blue ] " style="background-color: #2d8bc2;">On hover</a>
+                    </div>
+                    <div class=" [ col-md-5 card-content ] ">
+                        <section>
+                            <h3 class="title">Koden</h3>
+
+                            <pre><code class="language-css">
+.btn {
+    background-color:#006607;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:17px;
+    padding:10px 40px;
+    text-align: center;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #006607;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    &:hover {
+        background-color:#014d06;
+    }
+}
+
+.btn-blue{
+    background-color:#3cb2f5;
+    display:inline-block;
+    cursor:pointer;
+    color:#000000;
+    font-family:Arial;
+    font-size:17px;
+    padding:10px 40px;
+    text-align: center;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #006607;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    &:hover{
+        background-color:#2d8bc2;
+    }
+}
+
+</code>
+                </pre>
+                        </section>
+                    </div>
+                    <div class=" [ col-md-3 card-content ] ">
+                        <h3 class="title">Designvalg</h3>
+                        <p>Knappene har skarpe farger og kanter. Dette er for å illustrere serriøsitet, proffesjonalitet, og trygghet. HomeFair skal ikke være rund i kantene, og ingenting på nettsiden skal tilsi noe annet.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class=" [ card ] " id="textures">
+                <h2 class=" [ card-header text-center ] ">Teksturer</h2>
+                <div class=" [ d-flex jc-between ] ">
+                    <div class=" [ col-md-3 card-content ] ">
+                        <h3 class="title">Resultat</h3>
+                        <figure class="ds-square-background-color house" role="img" aria-labelledby="green-square">
+                        </figure>
+                    </div>
+                    <div class=" [ col-md-5 card-content ] ">
+                        <h3 class="title">Koden</h3> </div>
+                    <div class=" [ col-md-3 card-content ] ">
+                        <h3 class="title">Designvalg</h3>
+                        <p>Teksturen HomeFair kan ta i bruk er en tekstur basert på hus.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class=" [ card ] " id="icons">
+                <h2 class=" [ card-header text-center ] ">Ikoner</h2>
+                <div class=" [ d-flex jc-between ] ">
+                    <div class=" [ col-md-3 card-content ] ">
+                        <h3 class="title">Resultat</h3>
+                        <div class=" [ d-flex jc-between ] ">
+                            <img class=" [ col-md-3 ] " src="images/bath_9.png">
+                            <img class=" [ col-md-3 ] " src="images/balcony_9.png">
+                            <img class=" [ col-md-3 ] " src="images/list_9_9.png">
+                        </div>
+                        <div class=" [ d-flex jc-between mt-2em ] ">
+                            <img class=" [ col-md-3 ] " src="images/garage_9.png">
+                            <img class=" [ col-md-3 ] " src="images/save_9.png">
+                            <img class=" [ col-md-3 ] " src="images/kitchen_9.png">
+                        </div>
+                    </div>
+                    <div class=" [ col-md-5 card-content ] ">
+                        <h3 class="title">Koden</h3>
+                    </div>
+                    <div class=" [ col-md-3 card-content ] ">
+                        <h3 class="title">Designvalg</h3>
+                        <p>Ikonene skal stå i stil med knapper når det kommer til skarpe hjørner og likhet. Alle ikonene skal ha ett fylt element, og resten av ikonet skal være outlined. Dette er gjort for å forhindre tunge elementer på siden, og for å beholde en ren stil på siden.
+                        </p>
+                        <p>
+                            ( Ikonene vil være mer markerte og optimaliserte på den ferdige nettsiden)
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class=" [ card ] " id="form">
+                <h2 class=" [ card-header text-center ] ">Tekstfelt</h2>
+                <div class=" [ d-flex jc-between ] ">
+                    <div class=" [ col-md-3 card-content ] ">
+                        <h3 class="title">Resultat</h3>
+                        <form class=" [ form ] ">
+                            <input type="text" name="search" aria-label="Search field" class=" [ form-input ] " placeholder="Søk på adresse">
+                            <br>
+                            <input type="text" name="name" aria-label="name field" class=" [ form-input ] " placeholder="Navn">
+                            <br>
+
+                        </form>
+                    </div>
+                    <div class=" [ col-md-5 card-content ] ">
+
+                        <section>
+                            <h3 class="title">Koden</h3>
+                            <pre><code class="language-css">
+.form {
+    width: 100%;
+    }
+    .form-input {
+    width: 100%;
+    height: 2em;
+    border: 2px solid #082918;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    padding-left: 5px;
+    }
+                </code>
+                                </pre>
+                        </section>
+                    </div>
+                    <div class=" [ col-md-3 card-content ] ">
+                        <h3 class="title">Designvalg</h3>
+                        <p>Tekstfeltene på nettsiden skal være i samme stil som knappene når det kommer til dette med kantene. Skarpe kanter og rent utseende skal skape tillit til brukeren.
+                        </p>
+                        <p> I tilleg til skarpe kanter skal strekene være markerte for å illustrere at HomeFair er et bestemt selskap uten svakheter.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!--/container-->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+        <script src="prism.js"></script>
+        <script src="stickyNavbar.js"></script>
+
+        <script>
+            (function() {
+                if (typeof self === 'undefined' || !self.Prism || !self.document) {
+                    return;
+                }
+
+                if (!Prism.plugins.toolbar) {
+                    console.warn('Copy to Clipboard plugin loaded before Toolbar plugin.');
+
+                    return;
+                }
+
+                var ClipboardJS = window.ClipboardJS || undefined;
+
+                if (!ClipboardJS && typeof require === 'function') {
+                    ClipboardJS = require('clipboard');
+                }
+
+                var callbacks = [];
+
+                if (!ClipboardJS) {
+                    var script = document.createElement('script');
+                    var head = document.querySelector('head');
+
+                    script.onload = function() {
+                        ClipboardJS = window.ClipboardJS;
+
+                        if (ClipboardJS) {
+                            while (callbacks.length) {
+                                callbacks.pop()();
+                            }
+                        }
+                    };
+
+                    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js';
+                    head.appendChild(script);
+                }
+
+                Prism.plugins.toolbar.registerButton('copy-to-clipboard', function(env) {
+                    var linkCopy = document.createElement('button');
+                    linkCopy.textContent = 'Copy';
+
+                    if (!ClipboardJS) {
+                        callbacks.push(registerClipboard);
+                    } else {
+                        registerClipboard();
+                    }
+
+                    return linkCopy;
+
+                    function registerClipboard() {
+                        var clip = new ClipboardJS(linkCopy, {
+                            'text': function() {
+                                return env.code;
+                            }
+                        });
+
+                        clip.on('success', function() {
+                            linkCopy.textContent = 'Copied!';
+
+                            resetText();
+                        });
+                        clip.on('error', function() {
+                            linkCopy.textContent = 'Press Ctrl+C to copy';
+
+                            resetText();
+                        });
+                    }
+
+                    function resetText() {
+                        setTimeout(function() {
+                            linkCopy.textContent = 'Copy';
+                        }, 5000);
+                    }
+                });
+            })();
+        </script>
+    </body>
+
+</html>

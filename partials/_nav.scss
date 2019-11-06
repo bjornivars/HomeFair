@@ -1,0 +1,23 @@
+li{
+
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+.nav{
+    background-color: #082918;
+    &-logo{
+        width: 30%;
+    }
+    &-ul{
+
+        &-li{
+            &-a{
+
+                color: white;
+            }
+        }
+    }
+}

@@ -7,13 +7,16 @@ a{
 }
 
 .nav{
-    background-color: white;
+    background-color: #082918;
+    &-logo{
+        width: 30%;
+    }
     &-ul{
 
         &-li{
             &-a{
 
-                color: black;
+                color: white;
             }
         }
     }
