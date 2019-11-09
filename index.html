@@ -13,7 +13,7 @@
     
     <div class=" [ nav d-flex ] " id="navbar">
         <div class=" [ col-md-3 nav-logo ] ">
-            <img class=" [ nav-logo ] " src="images/HomeFair_logo (1).png">
+           <a href="index.html"> <img class=" [ nav-logo ] " src="images/HomeFair_logo (1).png"></a>
         </div>
 
         <div class=" [ col-md-5 ] "></div>
@@ -33,6 +33,7 @@
 
     <div class=" [ col-md-12 header ] ">
         <div class=" [ col-md-8 m-auto header-box ] ">
+
             <div class=" [ header-box-h1 text-center ] ">
                 <h1>Skal du selge bolig?</h1>
             </div>
@@ -44,14 +45,124 @@
             <div class=" [ header-box-search ] ">
                     <form class=" [ form ] ">
                         <input type="text" name="search" aria-label="Search field" class=" [ form-input ] " placeholder="Søk på adresse">
+                        <i class="fas fa-search"></i>
                     </form>
             </div>
             <div class=" [ header-box-searchBtn ] ">
-                <a class=" [ header-box-searchBtn-btn ] " href="#">Søk</a>
+                <a class=" [ header-box-searchBtn-btn ] " id="modalTrigger" href="#">Søk</a>
             </div>
         </div>
     </div>
 
+    <div class=" [ content container ] ">
+
+        <h2 class=" [ between-parts-m ] ">Hvordan fungerer boligtjenesten?</h2>
+        <div class=" [ col-md-12 d-flex jc-between steps ] ">
+            <div class=" [ col-md-3 steps-sok`] ">
+                <img src="images/Group 13.png" class=" [ steps-sok-image ] " style="margin: auto;" alt="Søk illustrasjon">
+                <h3 class=" [ text-center ] ">Søk</h3>
+                <p class=" [ text-center ] ">Du søker på din adresse og vår modell lager et prisestimat på din bolig og vurderer hva hver enkel eiendomsmegler, som opererer i ditt område, vil kunne selge din bolig for. 
+                        Vi bruker flere hundrede variabler samt salgshistorikken til eiendomsmeglerne som grunnlag for vår intelligente løsning.  </p>
+            </div>
+            <div class=" [ col-md-3 steps-sok`] ">
+                    <img src="images/Group 11.png" class=" [ steps-sok-image ] " style="margin: auto;" alt="Søk illustrasjon">
+                    <h3 class=" [ text-center ] ">Hva tjener du?</h3>
+                    <p class=" [ text-center ] ">Du får et gratis prisestimat og du blir opplyst om forskjellen i forventet salgspris om du bruker en høytpresterende megler sammenlignet med en lavtpresterende megler; altså hvor mye du potensielt sett kan spare på riktig meglervalg for nettopp din bolig.  </p>
+                </div>
+                <div class=" [ col-md-3 steps-sok`] ">
+                        <img src="images/Group 12.png" class=" [ steps-sok-image ] " style="margin: auto;" alt="Søk illustrasjon">
+                        <h3 class=" [ text-center ] ">Få tilgang</h3>
+                        <p class=" [ text-center ] ">Deretter får du tilgang til listen over de 5 beste meglerne 
+                                slik at du vet hvem som, statistisk sett, vil kunne selge din bolig til høyest pris. 
+                                Du får også tilgang til annen viktig innsikt om ditt boligsalg og meglernes historikk </p>
+                    </div>
+
+        </div>
+
+
+    </div> <!--/container-->
+
+
+
+
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h1>Først trenger vi litt flere opplysninger</h1>
+            <div class="modal-content-primaerrom">
+                <h2>Primærrom? (P-rom)  <i class="fas fa-question-circle" onclick="showDivQuestion()"></i></h2>
+                <p id="QuestionDiv" class=" [ hidden-p ] ">Primærrom gir et bedre estimat enn bruksareal 
+
+                        og er derfor ønskelig å anvende i prediksjonen. </p>
+                <div class="input-container">
+                <p class=" [ squareMeter icon ] ">m<sup>2</sup></p>
+                        <input class="input-field" type="number" placeholder="" name="usrnm">
+                      </div>
+            </div>
+
+            <div class="modal-content-primaerrom">
+                    <h2>Har du følgende?  <i class="fas fa-question-circle" onclick="showDivQuestion1()"></i></h2>
+                    <p id="QuestionDiv1" class=" [ hidden-p ] ">
+                            Avhengig av datatilgjengelighet, vil informasjonen 
+                            muligvis bli brukt til å gi deg et mer treffsikkert estimat.     
+                    </p> 
+                    <div class=" [ col-md-6 m-auto modal-content-illustration d-flex jc-between ] ">
+                            <a href="#" class=" [ illustrationLink  col-md-5  ] ">
+                                    <div class=" [ d-flex jc-center ] ">
+                                        <img src="images/garage.png" class=" [ illustration ]  ">
+                                    </div>
+                                    <p class="small">Garasje/Parkeringsplass</p>
+                                </a>
+                    <a href="#" class=" [ illustrationLink  col-md-5  ] ">
+                            <div class=" [ d-flex jc-center ] ">
+                                <img src="images/balcony.png" class=" [ illustration ]  ">
+                            </div>
+                            <p class="small">Balkong/Terrasse</p>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="modal-content-primaerrom">
+                        <h2>Har du oppusset følgende siden du kjøpte din bolig?   <i class="fas fa-question-circle" onclick="showDivQuestion2()"></i></h2>
+                        <p id="QuestionDiv2" class=" [ hidden-p ] ">
+                                Effekten av oppussing er vanligvis merkbar, men avhenger blant annet av boligtype og lokalitet. Velg nedenfor for et mer treffsikkert estimat.   
+                        </p> 
+                        <div class=" [ col-md-6 m-auto modal-content-illustration d-flex jc-between ] ">
+                                <a href="#" class=" [ illustrationLink  col-md-5  ] ">
+                                        <div class=" [ d-flex jc-center ] ">
+                                            <img src="images/barhroom.png" class=" [ illustration ]  ">
+                                        </div>
+                                        <p class="small">Bad/Toalett</p>
+                                    </a>
+                        <a href="#" class=" [ illustrationLink  col-md-5  ] ">
+                                <div class=" [ d-flex jc-center ] ">
+                                    <img src="images/kitchen.png" class=" [ illustration ]  ">
+                                </div>
+                                <p class="small">Kjøkken</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class=" [ header-box-searchBtn ] ">
+                            <a class=" [ header-box-searchBtn-btn purple ] " id="modalTrigger" href="#">Søk</a>
+                        </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+    <script src="navbar.js"></script>
+    <script src="modal.js"></script>
+    <script src="showDivs.js"></script>
+
+    <script src="https://kit.fontawesome.com/fcf18181c4.js" crossorigin="anonymous"></script>
 
 
 </body>

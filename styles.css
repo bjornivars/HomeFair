@@ -7,6 +7,24 @@ body {
   color: black;
 }
 
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.between-parts-m {
+  margin-top: 5em;
+  margin-bottom: 2em;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+}
+
 .d-flex {
   display: flex;
 }
@@ -19,6 +37,10 @@ body {
   justify-content: space-between;
 }
 
+.jc-center {
+  justify-content: center;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -28,11 +50,13 @@ body {
 }
 
 .header {
-  background-color: #082918;
-  height: 60vh;
+  background: url("images/house2_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75vh;
 }
 .header-box-h1 {
-  padding-top: 3em;
+  padding-top: 10em;
   color: white;
 }
 .header-box-text {
@@ -41,26 +65,51 @@ body {
 .header-box-search .form {
   width: 50%;
   margin: auto;
+  margin-top: 3em;
+  display: flex;
 }
 .header-box-search .form-input {
   width: 100%;
   height: 2em;
-  border: 2px solid #082918;
+  border: none;
+  border-bottom: 2px solid white;
   padding-top: 5px;
   padding-bottom: 5px;
   margin-top: 10px;
   padding-left: 5px;
+  background-color: transparent;
+}
+.header-box-search .form-input::placeholder {
+  color: white;
+  font-size: 2em;
 }
 .header-box-searchBtn-btn {
   width: 10%;
   display: block;
   padding: 5px;
-  background-color: #3CB2F5;
-  color: black;
-  font-weight: bold;
+  background-color: #082918;
+  color: white;
+  font-weight: normal;
   text-align: center;
   margin: auto;
   margin-top: 2em;
+}
+.header-box-searchBtn-btn:hover {
+  background-color: #0e4629;
+}
+
+.steps-sok-image {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+}
+
+.fa-search {
+  color: white;
+  margin-top: 10px;
+  padding-top: 5px;
+  font-size: 1.5em;
+  border-bottom: 2px solid white;
 }
 
 @media only screen and (max-width: 599px) {
@@ -229,6 +278,138 @@ a {
 }
 .nav-ul-li-a {
   color: white;
+}
+
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+#navbar {
+  overflow: hidden;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.55s;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 40vw;
+  border-radius: 0.5rem;
+  overflow: auto;
+  max-height: 80vh;
+}
+
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+
+.close-button:hover {
+  background-color: darkgray;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+/* Style the input container */
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+/* Style the form icons */
+.icon {
+  padding: 10px;
+  background: #3E38AA;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Style the input fields */
+.input-field {
+  width: 30%;
+  padding-left: 5px;
+  font-size: 1em;
+  border: 1px solid #3E38AA;
+}
+
+.input-field:focus {
+  border: 2px solid #3E38AA;
+}
+
+.fa-question-circle {
+  font-size: 0.75em;
+  font-weight: normal;
+}
+
+.hidden-p {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1em;
+  display: none;
+}
+
+.illustration {
+  width: 75%;
+  margin: auto;
+}
+
+.illustrationLink:hover {
+  border: 2px solid #3E38AA;
+}
+
+.small {
+  font-size: 12px;
+  color: black;
+  text-align: center;
+}
+
+.purple {
+  width: 30%;
+  background-color: #3E38AA;
 }
 
 /*# sourceMappingURL=styles.css.map */
