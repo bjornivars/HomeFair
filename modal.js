@@ -27,3 +27,14 @@ var modal = document.querySelector(".modal");
      function showDivbalcony() {
         document.getElementById('BalconyQuestion').style.display = "block";
      }
+
+
+
+     function dodajAktywne(elem) {
+        // get all 'a' elements
+        var a = document.getElementsByTagName('a');
+
+
+        // add 'active' classs to the element that was clicked
+        elem.classList.add('active');
+    }

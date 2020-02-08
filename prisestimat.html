@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="noindex">
+    <title>HomeFair</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class=" [ topnav sticky ] " id="myTopnav">
+        <a href="index.html" class=" [ logo no-padding ] "><img class=" [ nav-logo ] " src="images/HomeFair_logo (1).png"></a>
+
+        <a href="#news" class=" [ a-padding ] ">News</a>
+        <a href="#contact" class=" [ a-padding ] ">Contact</a>
+        <a href="#about" class=" [ a-padding ] ">About</a>
+        <a href="javascript:void(0);" class=" [ icon no-bg ] " onclick="myFunction()">
+          <i class=" [ fa fa-bars ] "></i>
+        </a>
+
+      </div>
+    <!--/nav-->
+
+    <div class=" [ col-md-12 header ] ">
+        <div class=" [ col-md-6 col-xs-10 m-auto header-box ] ">
+
+            <div class=" [ header-box-h1 ] ">
+                <h1>Boligveien 1, 1253 Oslo </h1>
+            </div>
+            <div class=" [ header-box-text d-flex jc-between col-md-8 col-xs-12 ] ">
+                <p class=" [ inline col-xs-8 ] ">Boligprisestimat: 
+                </p>
+                <p class=" [ inline col-xs-4 ] ">4 305 764 kr 
+                </p>
+            </div>
+            <div class=" [ header-box-text d-flex jc-between col-md-8 col-xs-12 ] ">
+                <h2 class=" [ inline bold ] ">Potensiell gevinst 
+                </h2>
+                <h2 class=" [ inline bold ] ">217 045 kr 
+                </h2>
+            </div>
+            <hr>
+            <div class=" [ header-box-text d-flex jc-between col-md-8 col-xs-12 ] ">
+                <p class=" [ inline col-xs-8 ] ">Antall meglere vi sammenlignet:
+                </p>
+                <p class=" [ inline col-xs-4 text-right ] ">24 
+                </p>
+            </div>
+            <div class=" [ header-box-text d-flex jc-between col-md-8 col-xs-12 ] ">
+                <p class=" [ inline col-xs-8 ] ">Salgspris med høytpresterende megler 
+                </p>
+                <p class=" [ inline col-xs-4 text-right ] ">4 478 989 kr 
+                </p>
+            </div>
+            <div class=" [ header-box-text d-flex jc-between col-md-8 col-xs-12 ] ">
+                <p class=" [ inline col-xs-8 ] ">Salgspris med lavtpresterende megler 
+                </p>
+                <p class=" [ inline col-xs-4 text-right ] ">4 261 944 kr 
+                </p>
+            </div>
+            <div class=" [ text-center moreInfo ] ">
+                <a class=" [ text-center moreInfo-text ] " id="modalTrigger" href="#">Mer Informasjon</a> <br>
+                <a href="#"><i class=" [ far fa-arrow-alt-circle-down ] "></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class=" [ content ] ">
+        <div class=" [ option ] ">
+            <h2 class=" [ option-h2 ] ">To alternativer, et valg </h2>
+            <div class=" [ option-container ] ">
+                <div class=" [ option-container-box col-md-5 col-xs-12 ] ">
+                    <h3 class=" [ text-center ] ">Pris 1499 kr </h3>
+                    <h4>Dette får du </h4>
+                    <div class=" [ d-flex jc-between mt-1-5em ] ">
+                    <i class=" [ fas fa-list item col-md-2 col-xs-2 ]"></i><span class=" [ col-md-10 ] ">En liste med de 5 beste meglerne vi fant for nettopp din bolig og hva vi estimerer de kan selge boligen for. </span>
+                </div>
+                    <br>
+                    <div class=" [ d-flex jc-between mt-1-5em ] ">
+                    <i class=" [ far fa-clock item col-md-2 ] "></i><span class=" [ col-md-10 ] ">Hvor lenge de 5 beste meglerne i gjennomsnitt bruker på å selge en bolig. </span>
+                    </div><br>
+                    <div class=" [ d-flex jc-between mt-1-5em ] ">
+                    <i class=" [ fas fa-percent item col-md-2 ]"></i><span class=" [ col-md-10 ] ">Hvor mye de 5 beste meglerne i gjennomsnitt feilvurderer salgsprisen. </span>
+                </div>
+                <div class=" [ d-flex jc-between report ] ">
+                    <div class=" [ col-md-2  ] "></div><a href="#" class=" [ col-md-10 col-xs-12 example color-black ] ">Se eksempel på boligrapport</a>
+                </div>
+                <a class=" [ btn bottom trigger ] " id="trigger" >Bestill rapport</a>
+                <div class=" [ text-center ] "> <p>Hvorfor velge denne?</p></div>
+                <div class=" [ col-md-5 m-auto d-flex jc-between mb-1em ] ">
+                <a href="#" class=" [ underline color-black ] " id="underline1" onclick="showAdvantagePaid(); return false;">Fordeler</a>
+                <a href="#" class=" [ underline color-black ] " id="underline2" onclick="showDisavantagePaid(); return false;">Ulemper</a>
+
+
+            </div>
+            <div class=" [ d-none ] " id="advantagePaid" >
+                <p class="">Alle eiendomsmeglere blir sammenlignet, også de vi ikke har en avtale med. Du får derfor den best mulige liste med eiendomsmeglere.  </p>
+                <p class="">Du bestemmer selv når du kontakter eiendomsmeglerne; vi videreformidler aldri informasjon ved valg av alternativ 1. </p>
+            </div>
+            <div class=" [ d-none ] " id="disadvantagePaid">
+                <p class="">Det koster penger, også selv om potensialet for gevinst er selvfølgelig mange titalls større enn kostnaden.    </p>
+                <p class="">Det er ikke sikkert at alle eiendomsmeglerne på listen har tid eller ønsker å stå for salget av din bolig.  </p>
+            </div>
+                </div>
+
+                    <div class=" [ option-container-box col-md-5 col-xs-12 box2 ] ">
+                        <h3 class=" [ text-center ] ">GRATIS </h3>
+                        <h4>Dette får du </h4>
+                        <div class=" [ d-flex jc-between mt-1-5em ] ">
+                        <i class=" [ fas fa-list item col-md-2 ]"></i><span class=" [ col-md-10 ] ">En liste med de 5 beste meglerne vi har en avtale med. Akkurat som ved mulighet 1, men uten de som ikke har avtale med oss.  </span>
+                    </div>
+                        <br>
+                        <div class=" [ d-flex jc-between mt-1-5em ] ">
+                        <i class=" [ far fa-clock item col-md-2 ] "></i><span class=" [ col-md-10 ] ">Hvor lenge disse meglerne i gjennomsnitt bruker på å selge en bolig. </span>
+                        </div><br>
+                        <div class=" [ d-flex jc-between mt-1-5em ] ">
+                        <i class=" [ fas fa-percent item col-md-2 ] "></i><span class=" [ col-md-10 ] ">Hvor mye disse meglerne i gjennomsnitt feilvurderer salgsprisen. </span>
+                    </div>
+                    <div class=" [ d-flex jc-between report ]" >
+                        <div class=" [ col-md-2  ] "></div><a href="#" class=" [ col-md-10 col-xs-12 example color-black ] ">Se eksempel på boligrapport</a>
+                    </div>
+                    <a class=" [ btn bottom trigger ] " id="trigger2">Bestill rapport</a>
+
+                    <div class=" [ text-center ] "> <p>Hvorfor velge denne?</p></div>
+                    <div class=" [ col-md-5 m-auto d-flex jc-between mb-1em ] ">
+                    <a href="#" class=" [ underline  color-black ] " id="underline3" onclick="showAdvantageFree(); return false;">Fordeler</a>
+                    <a href="#" class=" [ underline color-black ] " id="underline4" onclick="showDisadvantageFree();return false;">Ulemper</a>
+
+                </div>
+                <div class=" [ d-none ] " id="advantageFree" >
+                    <p class="">Alle eiendomsmeglere blir sammenlignet, også de vi ikke har en avtale med. Du får derfor den best mulige liste med eiendomsmeglere.  </p>
+                    <p class="">Du bestemmer selv når du kontakter eiendomsmeglerne; vi videreformidler aldri informasjon ved valg av alternativ 1. </p>
+                </div>
+                <div class=" [ d-none ] " id="disadvantageFree">
+                    <p class="">Det koster penger, også selv om potensialet for gevinst er selvfølgelig mange titalls større enn kostnaden.    </p>
+                    <p class="">Det er ikke sikkert at alle eiendomsmeglerne på listen har tid eller ønsker å stå for salget av din bolig.  </p>
+                </div>
+                    </div>
+
+
+
+             </div>
+
+        </div>
+
+    </div> <!--/container-->
+
+    <div class=" [ modal ] ">
+        <div class=" [ modal-content ] ">
+            <span class=" [ close-button ] ">&times;</span>
+            <h2>Bestilling</h2>
+            <form>
+                <div class=" [ input-container ] ">
+                    <i class=" [ fas fa-user squareMeter icon ]"></i>
+                            <input class=" [ input-field ] " type="text" placeholder="Fornavn" name="usrnm">
+                          </div>
+                          <div class=" [ input-container ] ">
+                            <i class=" [ fas fa-user squareMeter icon ] "></i>
+                                    <input class=" [ input-field ] " type="text" placeholder="Etternavn" name="usrnm">
+                                  </div>
+                                  <div class=" [ input-container ] ">
+                                    <i class=" [ fas fa-at squareMeter icon ] "></i>                                            
+                                    <input class=" [ input-field ] " type="email" placeholder="Email" name="email">
+                                          </div>
+                                          <div class=" [ input-container ] ">
+                                            <i class=" [ fas fa-check-circle squareMeter icon ] "></i>                                          
+                                            <input class=" [ input-field ] " type="email" placeholder="Bekreft Email" name="email">
+                                                  </div>
+            </form>
+
+                    <div class=" [ header-box-searchBtn ] ">
+                            <a class=" [ header-box-searchBtn-btn btn ] " id="modalTrigger" href="prisestimat.html">Send</a>
+                        </div>
+
+        </div>
+    </div>
+
+    <footer class=" [ footer ] ">
+        <div class=" [ footer-left ] ">
+            <img src="images/HomeFair_logo (1).png">
+            <p class=" [ footer-links ] ">
+                <a href="#">Hjem</a> ·
+                <a href="#">Selg</a> ·
+                <a href="#">Prisestimat</a> ·
+                <a href="#">Om oss</a> ·
+                <a href="#">Faq</a> ·
+                <a href="#">Kontakt oss</a>
+            </p>
+        </div>
+
+        <div class=" [ footer-center ] ">
+
+            <div>
+                <i class=" [ fa fa-map-marker ] "></i>
+                <p><span>Oslo</span> Norge</p>
+            </div>
+
+            <div>
+                <i class=" [ fa fa-phone ] "></i>
+                <p>+47 123 45 678</p>
+            </div>
+
+            <div>
+                <i class=" [ fa fa-envelope ] "></i>
+                <p><a href="#">Email@email.com</span></a></p>
+            </div>
+
+        </div>
+        <div class=" [ footer-right ] ">
+            <p class=" [ footer-company-about ] ">
+                <span>Hva er HomeFair?</span> Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+            </p>
+            <div class=" [ footer-icons ] ">
+                <a href="#"><i class=" [ fab fa-facebook-f ] "></i></a>
+                <a href="#"><i class=" [ fab fa-twitter ] "></i></a>
+                <a href="#"><i class=" [ fab fa-linkedin ] "></i></a>
+                <a href="#"><i class=" [ fab fa-github ] "></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="navbar.js"></script>
+    <script src="modal2.js"></script>
+    <script src="price.js"></script>
+    <script src="https://kit.fontawesome.com/fcf18181c4.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

@@ -17,10 +17,13 @@
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 1rem 1.5rem;
-    width: 40vw;
+
     border-radius: 0.5rem;
     overflow: auto;
     max-height: 80vh;
+    &-primaerrom{
+        margin-top: 2.5em;
+    }
 
 }
 .close-button {
@@ -57,7 +60,7 @@
 /* Style the form icons */
 .icon {
   padding: 10px;
-  background: #3E38AA;
+  background: #112155;
   color: white;
   min-width: 50px;
   text-align: center;
@@ -67,16 +70,20 @@
 
 /* Style the input fields */
 .input-field {
-  width: 30%;
+  width: 50%;
   padding-left: 5px;
   font-size: 1em;
-  border: 1px solid #3E38AA;
+  border: 1px solid #112155;
+  &:focus{
+    outline: 2px solid #112155;
+  }
 
 }
-
-.input-field:focus {
-  border: 2px solid #3E38AA;
+input:focus{
+    outline: none;
 }
+
+
 
 .fa-question-circle{
     font-size: 0.75em;
@@ -97,8 +104,13 @@
     margin: auto;
 }
 
-.illustrationLink:hover{
-    border: 2px solid #3E38AA;
+.illustrationLink{
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+    &:hover{
+        border: 2px solid #112155;
+    }
 }
 
 .small{
@@ -111,3 +123,35 @@
     width: 30%;
     background-color: #3E38AA;
 }
+
+.active{
+    border: 2px solid #3E38AA;
+}
+
+
+@media only screen and (max-width: 599px) {
+    /* For tablets: */
+    .modal-content {
+         width: 80vw;
+    }
+    .hidden-p{
+        text-align: left;
+    }
+    .text-right{
+        text-align: right;
+    }
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .modal-content {
+        width: 70vw;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .modal-content {
+         width: 40vw;
+    }
+  }
